@@ -3,25 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O Michels</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>My Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff); /* Light gradient */
+    }
+
+    /* Navbar styles */
+    #navbar {
+      background-color: #333;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    #navbar a:hover {
+      background-color: #575757;
+      color: white;
+    }
+
+    /* Content padding to prevent overlap with fixed navbar */
+    .content {
+      padding: 80px 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>O</h1>
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-  </header>
-
-  <main>
-    <h2>Hello!</h2>
-    <p>I'm O! I make things, including Music, Games, Software, and Art.</p>
-
-  </main>
-
-  <footer>
-    
-  </footer>
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is the homepage of a simple site with a global nav bar.</p>
+    <p>Feel free to explore the About and Contact pages!</p>
+  </div>
 
 </body>
 </html>
